@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIGHT OWLS ♡</title>
+    <link rel="stylesheet" href="lundev.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="..\Pics/logo.jpg">
+    <title>NIGHT OWLS ♡</title>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+
+        <div class="logo">
+            <img src="..\Pics/logo.jpg" alt="" >
+            <h3>NIGHT OWLS ♡</h3>
+        </div>
+        <div class="nav" id="small_menu">
+           
+           
+        </div>
+      
+        <div class="user">
+            
+            
+         
+        </div>  
+    </header>
+    <div class="container">
+        <div id="slide">
+            
+            <div class="item" style="background-image: url(lun3.jpg);">
+                <div class="content">
+                    <div class="name">ANIME</div>
+                    <p>GOAT!!!</p>
+                    <div class="des"></div>
+                    <button><a href="animie.html">Click Here</a></button>
+                </div>
+            </div>
+         
+            
+            
+            <div class="item" style="background-image: url(lun4.jpg);">
+                <div class="content">
+                    <div class="name"></div>
+                    <p>Heyy!! <br>Running out of movies? Don't worry, we are here to the rescue.  Showing you the latest movies and top picks of all Genre, Drama and much more... Stay tuned!!! <br>Enjoy Your Popcorn times ♡
+                    </p>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(lun1.jpg);">
+                <div class="content">
+                    <div class="name">GENRE</div>
+                    <p>Top-picked genres awaiting!! Get ready to cozy up with blanket and popcorn!!</p>
+                    <div class="des"></div>
+                    <button><a href="actual.html">Click Here</a></button>
+                </div>
+            </div>
+           
+        
+            <div class="item" style="background-image: url(lun2.jpg);">
+                <div class="content">
+                    <div class="name">DRAMA</div>
+                    <p>Have you ever seen anyone watching a drama and still be unhappy! <br>Korean, English, Japanese and more!! Choose your favourite pick. </p>
+                    <div class="des"></div>
+                    <button><a href="drama.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
+  
+    </script>
+    
+</body>
+</html>
